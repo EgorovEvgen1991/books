@@ -1,0 +1,10 @@
+стр 289 
+Object Mother («Мать объектов»). Это класс или метод, который помогает создавать тестовые данные
+
+Test Data Builder он похож на паттерн Object Mother,
+ но при этом предоставляет fluent-интерфейс вместо простых методов. Пример
+использования паттерна Test Data Builder:
+User user = new UserBuilder()
+.WithEmail("user@mycorp.com")
+.WithType(UserType.Employee)
+.Build();
