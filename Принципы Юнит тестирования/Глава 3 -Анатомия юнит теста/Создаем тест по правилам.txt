@@ -1,0 +1,27 @@
+стр 65
+Использовать паттерн АААА
+стр 71
+ Выделение тестируемой системы  (system under test, SUT) 
+стр 74
+Переиспользование тестовых данных между тестами
+. Fluent Фабрика. Mother Object
+Fluent Assertions [субъект] [действие] [объект].
+
+стр 81
+ Рекомендации по именованию юнит-тестов
+
+IsDeliveryValid_InvalidDate_ReturnsFalse() - Плохо
+Delivery_with_past_date_should_be_considered_invalid() - Хорошо
+
+Стр 82
+ Параметризованные тесты
+public void Delivery_for_today_is_invalid()
+public void Delivery_for_tomorrow_is_invalid()
+public void The_soonest_delivery_date_is_two_days_from_now()
+переходит в параметризированный тест 
+
+[InlineData(­1, false)]
+[InlineData(0, false)]
+[InlineData(1, false)]
+[InlineData(2, true)]
+Can_detect_an_invalid_delivery_date()
